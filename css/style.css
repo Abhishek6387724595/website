@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -366,3 +369,81 @@ form:hover .form-button button{
     box-shadow: 0 0 20px 0 rgba(0,0,0,0.3);
 }
 /******************Contact Us End Here***************/
+
+/******************NewsLetter Start***************/
+
+.newsletter{
+    width: 100%;
+    height: auto;
+    margin: 80px auto;
+}
+
+.news_input{
+    border-radius: 100px 0px 0px 100px!important;
+    min-width: 150px;
+}
+.input-group-text{
+    color:#fff!important;
+    background: #5bc0de!important;
+    border-radius: 0 100px 100px 0!important;
+    min-width: 120px;
+}
+/******************NewsLetter End***************/
+
+/******************Footer Start*****************/
+.footersection{
+    width: 100%;
+    height: auto;
+    padding: 70px 0 20px 0;
+    background: #00abff;
+    position: relative;
+}
+.footersection p{
+    color:#fff;
+}
+.footersection li a{
+    font-size: 0.9rem;
+    line-height: 1.6;
+    color:#fff;
+    font-weight: 400;
+    text-transform: capitalize;
+    /**text-align: center;**/
+}
+.footersection h3{
+    text-transform: uppercase;
+    color: #fff;
+    margin-bottom: 25px;
+    font-size: 1.2rem!important;
+    font-weight: 600;
+    text-shadow: 0 2px 5px rgba(0,0,0,0.3);
+}
+/******************Footer End*******************/
+
+#myBtn{
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 40px;
+    z-index: 99;
+    border: none;
+    color:#fff;
+    background: #00abff;
+    border-radius: 10px;
+    padding: 10px;
+}
+#myBtn:hover{
+    background: #606060;
+}
+@media(max-width:768px){
+    .nav-item{
+        text-align: center!important;
+    }
+    .pricing,.happyclient,.contactus{
+        height: auto;
+        margin:50px;
+    }
+    .card-second{
+        transform: translateY(0px);
+        margin: 30px 0;
+    }
+}

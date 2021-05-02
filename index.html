@@ -32,16 +32,16 @@
           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Service</a>
+          <a class="nav-link" href="#servicediv">Service</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Price</a>
+          <a class="nav-link" href="#pricingdiv">Price</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">About</a>
+          <a class="nav-link" href="#newsletterid">About</a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#">Contact</a>
+          <a class="nav-link" href="#contactid">Contact</a>
         </li>
       </ul>
       
@@ -514,11 +514,11 @@
   <div class="container headings text-center">
     <h1 class="text-center font-weight-bold text-uppercase">Contact US</h1>
     <p class="text-capitalize pt-1">We're Here To Help And Answer Any Question You Might Have. 
-      We Look Forward To Hearing From You 🙂</p>
+      We Look Forward 💛 To Hearing From You 🙂</p>
   </div>
   <div class="container">
     <div class="row">
-      <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 col-1">
+      <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 offset-1">
 
         <form action="/action_page.php">
           <div class="form-group">
@@ -538,7 +538,7 @@
         <form action="/action_page.php">
           <div class="form-group">
             <!--<label for="email">Email address:</label>-->
-            <input type="number" class="form-control" placeholder="Enter Your Mo  bile No." id="mobile" required autocomplete="off">
+            <input type="number" class="form-control" placeholder="Enter Your Mobile No." id="mobile" required autocomplete="off">
           </div>
 
           <div class="form-group">
@@ -555,6 +555,93 @@
 
 </section>
 <!--***************************Contact Us End Here*********************************-->
+
+<!--***************************NewsLetter Start*********************************-->
+<section class="newsletter" id="newsletterid">
+  <div class="container headings text-center">
+    <h1 class="text-center font-weight-bold text-uppercase">Subscribe to Our NewsLetter</h1>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 offset-lg-2 col-12">
+        <div class="input-group mb-3">
+          <input type="text" class="form-control news_input" placeholder="Your Email">
+          <div class="input-group-append">
+            <span class="input-group-text">Subscribe</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!--***************************NewsLetter End***********************************-->
+
+<!--***************************Footer Start*************************************-->
+<!-- <section class="newsletter" id="newsletterid">
+  <div class="container headings text-center">
+    <h1 class="text-center font-weight-bold text-uppercase">Subscribe to Our NewsLetter</h1>
+  </div>
+</section> -->
+<footer class="footersection" id="footerdiv">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12 footerdiv">
+        <div>
+          <h3>About Abhishek</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur 
+            adipisicing elit. Esse praesentium sit e
+            t, ad, libero, eos velit amet excepturi 
+            accusamus autem aspernatur suscipit hic 
+            reprehenderit nostrum similique voluptas 
+            consectetur numquam deserunt.</p>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 col-md-6 col-12 footerdiv text-center">
+        <div>
+          <h3>Navigation</h3>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Home</a></li>
+        </div>
+      </div>
+  
+      <div class="col-lg-4 col-md-12 col-12 footerdiv">
+        <div>
+          <h3>NewsLetter</h3>
+          <p>Lorem ipsum dolor, sit amet consectetur 
+            adipisicing elit. Esse praesentium sit e
+            t, ad, libero, eos velit amet excepturi 
+            accusamus autem aspernatur suscipit hic 
+            reprehenderit nostrum similique voluptas 
+            consectetur numquam deserunt.</p>
+  
+            <div class="container newsletter-main">
+              <div class="row">
+                <div class="col-lg-12col-12">
+                  <div class="input-group mb-3">
+                    <input type="text" class="form-control news_input" placeholder="Your Email">
+                    <div class="input-group-append">
+                      <span class="input-group-text">Subscribe</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="mt-5 text-center">
+      <p>Lorem ipsum dolor sit uri aliquam!</p>
+    </div>
+
+    <div class="scrolltop float-right">
+      <i class="fa fa-arrow-up" onclick="topFunction()" id="myBtn"></i>
+    </div>
+  </div>
+</footer>
+<!--***************************Footer End***************************************-->
 
 
 <!-- jQuery library -->
@@ -578,6 +665,22 @@
     delay:10,
     time:3000
   })
+
+  mybotton=document.getElementById("myBtn");
+  window.onscroll=function(){scroolFunction()};
+
+  function scroolFunction(){
+    if(document.body.scrollTop>20 || document.documentElement.scrollTop>20)
+    {
+      mybutton.style.display="block";
+    }else{
+      mybutton.style.display="none";
+    }
+  }
+  function topFunction(){
+    document.body.scrollTop=0;
+    document.documentElement.scrollTop=0;
+  }
   
 </script>
     
